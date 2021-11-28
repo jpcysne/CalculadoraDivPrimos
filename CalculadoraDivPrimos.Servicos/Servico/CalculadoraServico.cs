@@ -9,15 +9,36 @@ namespace CalculadoraDivPrimos.Servicos.Servico
 {
     public class CalculadoraServico : ICalculator
     {
-        public List<int> CalcularDivisao(int numero)
+        public List<long> CalcularDivisao(long numero)
         {
-            List<int> listaDivisao = new List<int>();
+            List<long> listaDivisao = new List<long>();
+
+            for(int i = 2; i<= numero/2; i++)
+            {
+                if ( numero % i == 0)
+                {
+                    listaDivisao.Add(i);
+                }
+            }
+
+            listaDivisao.Add(1);
+            listaDivisao.Add(numero);
+
             return listaDivisao;
         }
 
-        public List<int> CalcularPrimos(int numero)
+        public List<long> CalcularPrimos(long numero)
         {
-            List<int> listaPrimos = new List<int>();
+            List<long> listaPrimos = new List<long>();
+
+            for (int i = 1; i <= numero; i++)
+            {
+                if (numero % i == 0)
+                {
+                    listaPrimos.Add(i);
+                }
+            }
+
             return listaPrimos;
         }
     }

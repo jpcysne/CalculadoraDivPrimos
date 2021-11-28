@@ -8,8 +8,8 @@ namespace CalculadoraDivPrimos.Servicos.Interface
 {
     public interface ICalculator
     {
-        List<int> CalcularDivisao(int numero);
+        List<long> CalcularDivisao(long numero);
 
-        List<int> CalcularPrimos(int numero);
+        List<long> CalcularPrimos(long numero);
     }
 }

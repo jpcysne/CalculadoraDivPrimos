@@ -1,13 +1,12 @@
 ﻿using System;
 
-namespace CalculadoraDivPrimos.Console
+namespace CalculadoraDivPrimos.Consoles
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console
+            Console.WriteLine();
         }
     }
 }

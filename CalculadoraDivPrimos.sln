@@ -9,9 +9,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CalculadoraDivPrimos.Servic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CalculadoraDivPrimos.Testes", "CalculadoraDivPrimos.Testes", "{5E3F5566-8952-4232-8EDC-3FAD97CC5815}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraDivPrimos.Console", "CalculadoraDivPrimos.Console\CalculadoraDivPrimos.Console.csproj", "{C2C4DB50-CA72-454D-8C79-457D3BF6DE6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraDivPrimos.Servicos", "CalculadoraDivPrimos.Servicos\CalculadoraDivPrimos.Servicos.csproj", "{6468AB09-77B4-48C4-B432-23AEF0C4B32C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2C4DB50-CA72-454D-8C79-457D3BF6DE6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2C4DB50-CA72-454D-8C79-457D3BF6DE6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2C4DB50-CA72-454D-8C79-457D3BF6DE6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2C4DB50-CA72-454D-8C79-457D3BF6DE6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6468AB09-77B4-48C4-B432-23AEF0C4B32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6468AB09-77B4-48C4-B432-23AEF0C4B32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6468AB09-77B4-48C4-B432-23AEF0C4B32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6468AB09-77B4-48C4-B432-23AEF0C4B32C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C2C4DB50-CA72-454D-8C79-457D3BF6DE6B} = {3231E509-BE75-4C2C-96A6-BA2C87F8F920}
+		{6468AB09-77B4-48C4-B432-23AEF0C4B32C} = {7A804572-D63E-47BE-B587-7ED98132D094}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8980D273-BEDD-46E2-B482-2A3D77AC8955}

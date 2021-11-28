@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CalculadoraDivPrimos.Console", "CalculadoraDivPrimos.Console", "{3231E509-BE75-4C2C-96A6-BA2C87F8F920}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CalculadoraDivPrimos.Servicos", "CalculadoraDivPrimos.Servicos", "{7A804572-D63E-47BE-B587-7ED98132D094}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CalculadoraDivPrimos.Testes", "CalculadoraDivPrimos.Testes", "{5E3F5566-8952-4232-8EDC-3FAD97CC5815}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8980D273-BEDD-46E2-B482-2A3D77AC8955}
+	EndGlobalSection
+EndGlobal

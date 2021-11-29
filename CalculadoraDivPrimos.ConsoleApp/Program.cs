@@ -9,6 +9,7 @@ namespace CalculadoraDivPrimos.ConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("Favor colocar um numero para saber os Números divisores e os Divisores Primos");
+
             long numeroEscolhido = Convert.ToInt64(Console.ReadLine());
 
             CalculadoraServico calculadoraServico = new CalculadoraServico();
@@ -16,6 +17,8 @@ namespace CalculadoraDivPrimos.ConsoleApp
             List<long> listDiv = calculadoraServico.CalcularDivisao(numeroEscolhido);
 
             var listPrimos = calculadoraServico.CalcularPrimos(listDiv);
+
+            Console.WriteLine("Número de Entrada = " + numeroEscolhido);
 
             Console.WriteLine("Números divisores = " + string.Join(" ", listDiv));
 

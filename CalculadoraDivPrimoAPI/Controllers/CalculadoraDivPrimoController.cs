@@ -1,0 +1,41 @@
+﻿using CalculadoraDivPrimoAPI.Model;
+using CalculadoraDivPrimoAPI.Service;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.Json;
+using System.Threading.Tasks;
+
+namespace CalculadoraDivPrimoAPI.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class CalculadoraDivPrimoController : ControllerBase
+    {
+        [HttpGet("GetNumeroDivPrimo/{valor}")]
+        public IActionResult GetNumeroDivPrimo(long valor)
+        {
+            try
+            {
+                APICalculadora apiCalculadora = new APICalculadora();
+
+                ModelCalculadora listaDivPrimos = apiCalculadora.CalculadoraAPIService(valor);
+
+                var json = JsonSerializer.Serialize(listaDivPrimos);
+                
+                return Ok(json);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpGet]
+        public string Get()
+        {
+            return "Para fazer funciona tem que colocar o endpoint igual api/CalculadoraDivPrimo/GetNumeroDivPrimo/{valor} na URL";
+        }
+    }
+}

@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraDivPrimos.Servic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraDivPrimos.ConsoleApp", "CalculadoraDivPrimos.ConsoleApp\CalculadoraDivPrimos.ConsoleApp.csproj", "{89AF7854-D3F3-4E0E-8E44-930AE82BA92E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraDivPrimosTeste", "CalculadoraDivPrimosTeste\CalculadoraDivPrimosTeste.csproj", "{502F3555-A2E0-4847-B1FD-7B3157D67A50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraDivPrimosTeste", "CalculadoraDivPrimosTeste\CalculadoraDivPrimosTeste.csproj", "{502F3555-A2E0-4847-B1FD-7B3157D67A50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CalculadoraDivPrimos.API", "CalculadoraDivPrimos.API", "{6E3DEDEA-7971-4028-BAA2-8546E0300D23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraDivPrimoAPI", "CalculadoraDivPrimoAPI\CalculadoraDivPrimoAPI.csproj", "{86512914-3F67-45D0-9896-ACF3FDF19539}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,10 @@ Global
 		{502F3555-A2E0-4847-B1FD-7B3157D67A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{502F3555-A2E0-4847-B1FD-7B3157D67A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{502F3555-A2E0-4847-B1FD-7B3157D67A50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86512914-3F67-45D0-9896-ACF3FDF19539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86512914-3F67-45D0-9896-ACF3FDF19539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86512914-3F67-45D0-9896-ACF3FDF19539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86512914-3F67-45D0-9896-ACF3FDF19539}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +49,7 @@ Global
 		{6468AB09-77B4-48C4-B432-23AEF0C4B32C} = {7A804572-D63E-47BE-B587-7ED98132D094}
 		{89AF7854-D3F3-4E0E-8E44-930AE82BA92E} = {3231E509-BE75-4C2C-96A6-BA2C87F8F920}
 		{502F3555-A2E0-4847-B1FD-7B3157D67A50} = {5E3F5566-8952-4232-8EDC-3FAD97CC5815}
+		{86512914-3F67-45D0-9896-ACF3FDF19539} = {6E3DEDEA-7971-4028-BAA2-8546E0300D23}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8980D273-BEDD-46E2-B482-2A3D77AC8955}

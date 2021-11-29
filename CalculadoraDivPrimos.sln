@@ -9,9 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CalculadoraDivPrimos.Servic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CalculadoraDivPrimos.Testes", "CalculadoraDivPrimos.Testes", "{5E3F5566-8952-4232-8EDC-3FAD97CC5815}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraDivPrimos.Servicos", "CalculadoraDivPrimos.Servicos\CalculadoraDivPrimos.Servicos.csproj", "{6468AB09-77B4-48C4-B432-23AEF0C4B32C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraDivPrimos.Servicos", "CalculadoraDivPrimos.Servicos\CalculadoraDivPrimos.Servicos.csproj", "{6468AB09-77B4-48C4-B432-23AEF0C4B32C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraDivPrimos.ConsoleApp", "CalculadoraDivPrimos.ConsoleApp\CalculadoraDivPrimos.ConsoleApp.csproj", "{89AF7854-D3F3-4E0E-8E44-930AE82BA92E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraDivPrimos.ConsoleApp", "CalculadoraDivPrimos.ConsoleApp\CalculadoraDivPrimos.ConsoleApp.csproj", "{89AF7854-D3F3-4E0E-8E44-930AE82BA92E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

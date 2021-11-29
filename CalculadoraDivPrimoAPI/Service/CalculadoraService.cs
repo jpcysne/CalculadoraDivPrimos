@@ -1,5 +1,6 @@
 ﻿using CalculadoraDivPrimoAPI.Model;
 using CalculadoraDivPrimos.Servicos.Servico;
+using CalculadoraDivPrimos.Servicos.Validacao;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,22 +10,37 @@ namespace CalculadoraDivPrimoAPI.Service
 {
     public class CalculadoraService
     {
-        public ModelCalculadora CalculadoraAPIService(long numeroEscolhido)
+        public ModelCalculadora CalculadoraAPIService(string caractereEscolhido)
         {
             CalculadoraServico calculadoraServico = new CalculadoraServico();
+            ValidacaoCalculadora validacaoCalculadora = new ValidacaoCalculadora();
 
-            List<long> listDiv = calculadoraServico.CalcularDivisao(numeroEscolhido);
+            bool validacao = validacaoCalculadora.CheckSeENumero(caractereEscolhido);
 
-            List<long> listPrimos = calculadoraServico.CalcularPrimos(listDiv);
-
-            ModelCalculadora listaDivPrimos = new ModelCalculadora
+            if (validacao)
             {
-                NumeroDeEntrada = numeroEscolhido,
-                DivisoresPrimos = listDiv,
-                NumerosDivisores = listDiv
-            };
+                long numeroEscolhido = Convert.ToInt64(caractereEscolhido);
 
-            return listaDivPrimos;
+                List<long> listDiv = calculadoraServico.CalcularDivisao(numeroEscolhido);
+
+                List<long> listPrimos = calculadoraServico.CalcularPrimos(listDiv);
+
+                ModelCalculadora listaDivPrimos = new ModelCalculadora
+                {
+                    NumeroDeEntrada = numeroEscolhido,
+                    NumerosDivisores = listDiv,
+                    DivisoresPrimos = listPrimos,
+                   
+                };
+
+                return listaDivPrimos;
+            }
+            else
+            {
+                throw new Exception();
+            }
+
+            
         }
     }
 }

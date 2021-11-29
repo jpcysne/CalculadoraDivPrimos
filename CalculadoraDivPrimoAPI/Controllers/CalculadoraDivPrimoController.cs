@@ -14,7 +14,7 @@ namespace CalculadoraDivPrimoAPI.Controllers
     public class CalculadoraDivPrimoController : ControllerBase
     {
         [HttpGet("GetNumeroDivPrimo/{valor}")]
-        public IActionResult GetNumeroDivPrimo(long valor)
+        public IActionResult GetNumeroDivPrimo(string valor)
         {
             try
             {
@@ -22,13 +22,13 @@ namespace CalculadoraDivPrimoAPI.Controllers
 
                 ModelCalculadora listaDivPrimos = apiCalculadora.CalculadoraAPIService(valor);
 
-                var json = JsonSerializer.Serialize(listaDivPrimos);
+                var json = JsonSerializer.Serialize(listaDivPrimos, new JsonSerializerOptions { WriteIndented = true });
                 
                 return Ok(json);
             }
             catch (Exception ex)
             {
-                return BadRequest();
+                return BadRequest("Não é um Numero");
             }
         }
 

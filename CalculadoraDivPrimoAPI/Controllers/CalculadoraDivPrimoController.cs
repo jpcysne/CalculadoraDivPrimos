@@ -28,7 +28,7 @@ namespace CalculadoraDivPrimoAPI.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest("Não é um Numero");
+                return BadRequest("Não é um Numero Natural");
             }
         }
 

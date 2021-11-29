@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CalculadoraDivPrimoAPI.Service
 {
-    public class APICalculadora
+    public class CalculadoraService
     {
         public ModelCalculadora CalculadoraAPIService(long numeroEscolhido)
         {

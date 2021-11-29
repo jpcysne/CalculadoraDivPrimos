@@ -18,7 +18,7 @@ namespace CalculadoraDivPrimoAPI.Controllers
         {
             try
             {
-                APICalculadora apiCalculadora = new APICalculadora();
+                CalculadoraService apiCalculadora = new CalculadoraService();
 
                 ModelCalculadora listaDivPrimos = apiCalculadora.CalculadoraAPIService(valor);
 

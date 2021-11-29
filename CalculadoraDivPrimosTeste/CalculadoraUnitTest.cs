@@ -10,18 +10,27 @@ namespace CalculadoraDivPrimosTeste
         [TestMethod]
         public void TestMethodCalcularDivisao()
         {
-            long valor = 2;
+            long valor = 45;
             CalculadoraServico calculadoraServico = new CalculadoraServico();
-            calculadoraServico.CalcularDivisao(valor);
+            List<long> valorteste = new List<long>() { 1, 3, 5, 9, 15, 45 };
 
+            List<long> valorDivisao = calculadoraServico.CalcularDivisao(valor);
+
+            CollectionAssert.AreEquivalent(valorteste, valorDivisao);
+            
         }
 
         [TestMethod]
-        public void TestMethod()
+        public void TestMethodCalcularPrimos()
         {
-            List<long> valor = new List<long> {1,2,3,4,5 };
+            List<long> valorteste = new List<long>() { 1, 3, 5, 9, 15, 45 };
+
+            List<long> valorResultado = new List<long>() { 1, 3, 5};
+
             CalculadoraServico calculadoraServico = new CalculadoraServico();
-            calculadoraServico.CalcularPrimos(valor);
+            List<long> valorPrimos = calculadoraServico.CalcularPrimos(valorteste);
+
+            CollectionAssert.AreEquivalent(valorResultado, valorPrimos);
 
         }
     }

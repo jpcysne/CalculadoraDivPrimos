@@ -36,7 +36,7 @@ namespace CalculadoraDivPrimos.ConsoleApp
             }
             else
             {
-                Console.WriteLine("Não é um Numero");
+                Console.WriteLine("Não é um Numero Natural");
 
                 Console.ReadLine();
             }

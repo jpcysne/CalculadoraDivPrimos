@@ -1,5 +1,6 @@
 ﻿using CalculadoraDivPrimos.Servicos.Servico;
 using System;
+using System.Collections.Generic;
 
 namespace CalculadoraDivPrimos.ConsoleApp
 {
@@ -12,13 +13,14 @@ namespace CalculadoraDivPrimos.ConsoleApp
 
             CalculadoraServico calculadoraServico = new CalculadoraServico();
 
-            var listDiv = calculadoraServico.CalcularDivisao(numeroEscolhido);
+            List<long> listDiv = calculadoraServico.CalcularDivisao(numeroEscolhido);
 
-            var listPrimos = calculadoraServico.CalcularPrimos(numeroEscolhido);
+            var listPrimos = calculadoraServico.CalcularPrimos(listDiv);
 
-            Console.WriteLine("Números divisores = " + listDiv);
+            Console.WriteLine("Números divisores = " + string.Join(" ", listDiv));
 
-            Console.WriteLine("Divisores Primos = " + listPrimos);
+            Console.WriteLine("Divisores Primos = " + string.Join(" ", listPrimos));
+
             Console.ReadLine();
         }
     }

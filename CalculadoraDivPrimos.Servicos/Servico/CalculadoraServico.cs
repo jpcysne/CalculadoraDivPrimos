@@ -13,7 +13,7 @@ namespace CalculadoraDivPrimos.Servicos.Servico
         {
             List<long> listaDivisao = new List<long>();
 
-            for(int i = 2; i<= numero/2; i++)
+            for(int i = 1; i<= numero/2; i++)
             {
                 if ( numero % i == 0)
                 {
@@ -21,24 +21,39 @@ namespace CalculadoraDivPrimos.Servicos.Servico
                 }
             }
 
-            listaDivisao.Add(1);
             listaDivisao.Add(numero);
 
             return listaDivisao;
         }
 
-        public List<long> CalcularPrimos(long numero)
+        public List<long> CalcularPrimos(List<long> numeros)
         {
             List<long> listaPrimos = new List<long>();
 
-            for (int i = 1; i <= numero; i++)
+            for (int contList = 0; contList < numeros.Count; contList++)
             {
-                if (numero % i == 0)
+                int countPrimos = 0;
+
+                if(numeros[contList] == 1)
                 {
-                    listaPrimos.Add(i);
+                    listaPrimos.Add(numeros[contList]);
+                }
+                else
+                {
+                    for (int i = 1; i <= numeros[contList]; i++)
+                    {
+                        if (numeros[contList] % i == 0)
+                        {
+                            countPrimos++;
+                        }
+                    }
+
+                    if (countPrimos == 2)
+                    {
+                        listaPrimos.Add(numeros[contList]);
+                    }
                 }
             }
-
             return listaPrimos;
         }
     }

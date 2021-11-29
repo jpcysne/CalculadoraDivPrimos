@@ -10,6 +10,6 @@ namespace CalculadoraDivPrimos.Servicos.Interface
     {
         List<long> CalcularDivisao(long numero);
 
-        List<long> CalcularPrimos(long numero);
+        List<long> CalcularPrimos(List<long> numeros);
     }
 }
